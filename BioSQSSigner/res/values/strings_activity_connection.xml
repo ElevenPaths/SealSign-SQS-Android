@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="title_activity_connection">Connection Settings</string>
+    
+    <string name="URLSealSign">SealSign URL</string>
+    <string name="ServiceTimeout">Service Timeout(sec)</string>
+    <string name="UserSealSign">User</string>
+    <string name="PassSealSign">Password</string>
+    
+    <string name="URLFrontEnd">Frontend URL</string>
+    <string name="UserFrontEnd">User</string>
+    <string name="PassFrontEnd">Password</string>
+    
+    <string name="pref_header_connection">Connection Parameters</string>
+
+  </resources>

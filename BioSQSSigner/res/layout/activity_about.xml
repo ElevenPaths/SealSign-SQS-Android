@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AboutActivity" >
+
+    <TextView
+        android:id="@+id/aboutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageViewAbout"
+        android:text="@string/aboutTitle"
+        android:textAppearance="@style/myTheme.ActionBar.Text" />
+    
+    <TextView
+        android:id="@+id/aboutVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/aboutTitle"
+        android:layout_below="@+id/aboutTitle"
+        android:text="@string/aboutVersion" />
+
+    <TextView
+        android:id="@+id/detailValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/aboutVersion"
+        android:layout_below="@+id/aboutVersion"
+        android:text="@string/aboutManufacturer" />
+
+     <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_alignLeft="@+id/imageViewAbout"
+		    android:layout_alignParentRight="true"
+		    android:layout_below="@+id/imageViewAbout"
+		    android:layout_marginTop="5dp"
+            >
+		    <TextView
+		        android:id="@+id/aboutText"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		    	android:text="@string/about_text"
+		        android:textSize="12sp"
+		        />
+    </ScrollView>
+    
+    <ImageView
+        android:id="@+id/imageViewAbout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

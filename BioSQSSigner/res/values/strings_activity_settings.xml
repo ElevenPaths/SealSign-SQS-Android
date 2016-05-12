@@ -1,0 +1,67 @@
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_header_signature">Signature Parameters</string>
+    <string name="pref_header_statistics">Statistics</string>
+    <string name="pref_header_support">Support</string>
+      
+      <string-array name="ProfileList">
+        <item >PDF</item>
+        <item >PAdESBasic</item>
+        <item >PAdESBES</item>
+        <item >PAdESLTV</item>
+        <item >PAdESXML</item>
+        <item >Office</item>       
+    </string-array>
+     <string name="Profile_title">Profile</string>
+     
+     <string-array name="LocationList">
+        <item >Upper Left Corner</item>
+        <item >Upper Right Corner</item>
+        <item >Lower Left Corner</item>
+        <item >Lower Right Corner</item>
+        <item >Left Side</item>
+        <item >Right Side</item>
+        <item >Custom</item>       
+    </string-array>
+     <string name="Location_title">Location</string>
+     <string name="DefaultLocation_title">Upper Left Corner</string>
+     
+     <string-array name="SizeList">
+        <item >Automatic</item>
+        <item >Custom</item>       
+    </string-array>
+     <string name="Size_title">Size</string>
+     <string name="DefaultSize_title">Upper Left Corner</string>
+     
+     <string-array name="RotationList">
+        <item >0º</item>
+        <item >90º</item>
+        <item >180º</item>
+        <item >270º</item>       
+    </string-array>
+     <string name="Rotation_title">Rotation</string>
+     
+     <string-array name="PagesList">
+        <item >All</item>
+        <item >Custom</item>       
+    </string-array>
+     <string name="Pages_title">Pages</string>
+     <string name="DefaultPages_title">Custom</string>
+     
+    <string name="PDFfilesTitle">PDF Files</string>
+    <string name="XPSfilesTitle">XPS Files</string>
+
+    <string name="UseStatistics">Usage Statistics</string>
+    <string name="TotalSignatures">Total Signatures</string>   
+    <string name="TotalVerifications">Total Verifications</string>
+    <string name="SuccessfulSignatures">Successful Signatures</string>
+    <string name="SuccessfulVerifications">Successful Verifications</string>
+    <string name="SignatureErrors">Signature Errors</string>
+    <string name="VerificationErrors">Verification Errors</string>
+    <string name="ResetStatistics">RESET STATISTICS</string>
+    
+    <string name="CommentsSupport">Comments/Support</string>
+    <string name="Help">Help</string>
+    
+</resources>

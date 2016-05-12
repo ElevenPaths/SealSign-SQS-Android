@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+ 
+    
+        
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="5dip">
+ 
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/pdf" />
+ 
+    </LinearLayout>
+              
+    
+     
+  	
+    <!-- Title Of the Document-->
+    <TextView
+        android:id="@+id/DetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:maxLines="2"
+        android:paddingRight="40dip"
+        android:text="Document"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+ 
+    <!-- Date of the document -->
+
+    <TextView
+        android:id="@+id/stateTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DetailTitle"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="01/01/2000"
+        android:textColor="#343434"
+        android:textSize="10dip" />
+ 
+    <!-- Document size -->
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/DetailTitle"
+        android:gravity="right"
+        android:text="5MB"
+        android:layout_marginRight="10dip"
+        android:textSize="10dip"
+        android:textColor="#649f9e"
+        android:textStyle="bold"/>
+ 
+    
+   <!--  <CheckBox   CheckedTextView
+        android:id="@+id/checkbox"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="fill_parent" /> -->
+  	
+ <CheckBox
+        android:id="@+id/checkedTextView"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="fill_parent"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"/>
+ <!--         android:onClick="toggle" -->
+ 
+ <TextView
+         android:id="@+id/ComputerName"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/stateTitle"
+         android:layout_toRightOf="@+id/thumbnail"
+         android:text="ComputerName"
+         android:textColor="#343434"
+         android:textSize="10dip" />
+
+     <TextView
+         android:id="@+id/QueueName"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="false"
+         android:layout_below="@+id/ComputerName"
+         android:layout_toRightOf="@+id/thumbnail"
+         android:text="QueueName"
+         android:textColor="#343434"
+         android:textSize="10dip" />
+</RelativeLayout>

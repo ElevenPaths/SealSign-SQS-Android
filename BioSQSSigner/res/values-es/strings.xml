@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BioSQSSigner</string>
+    <string name="action_settings">Configuración</string>
+    <string name="title_section1">Pendientes</string>
+    <string name="title_section2">Firmados</string>
+    <string name="title_section3">Enviados</string>
+    <string name="search_title">buscar</string>
+    <string name="menu_op_addcert">Importar Certificado</string>
+    <string name="menu_op_settings">Configuración</string>
+    <string name="menu_op_adjust">Ajustes de conexión</string>
+    <string name="menu_op_help">Ayuda</string>
+    <string name="menu_multiseleccion">Activar MutiSelección</string>
+    <string name="menu_no_multiseleccion">Desactivar MutiSelección</string>
+    <string name="menu_options">""</string>
+    <string name="menu_sign">Firmar Documentos</string>
+    <string name="menu_sign_send">Firmar y Enviar</string>
+    <string name="menu_send">Enviar Documento</string>
+    <string name="menu_verify">Verificar Firmas</string>
+    <string name="menu_select_all">(De)Seleccionar Todos</string>
+    <string name="menu_delete">Borrar Seleccionados</string>
+    <string name="menu_sign_and_send">Firmar y Enviar</string>
+    
+    <string name="service_jobnotexist">El valor del trabajo seleccionado retornado por el servidor de SQS es nulo</string>
+    <string name="service_wait">Espere por favor&#8230;</string>
+    <string name="service_gettingpending">Obteniendo trabajos</string>
+    <string name="service_addingjob">Añadiendo trabajo a pendientes</string>
+    <string name="service_deletingjob">Eliminando trabajos</string>
+    <string name="service_gettingjob">Obteniendo trabajo</string>
+    <string name="service_changingowner">Cambiando propietarios</string>
+    <string name="refreshdocuments">Refrescar</string>
+    <string name="changeuser">Cambiar Usuario</string>
+    <string name="changeowner">Cambiar Propietario</string>
+    <string name="newowner">Nuevo Propietario</string>
+    
+     <string name="support_mail_address">soporte@smartaccess.es</string>
+     <string name="support_mail_subject">Petición de soporte</string>
+     <string name="support_mail_text">Petición de soporte realizada desde BioSQSSigner&#8230;</string>
+    
+    <string name="pref_signtarue_param_title">Parámetros de Firma</string>
+    <string name="pref_support_title">Soporte</string>
+    <string name="pref_statistics_title">Estadisticas</string>
+    <string name="DefaultValue">Default</string>
+    <string name="title_activity_about">Acerca de</string>
+    
+    <string name="aboutTitle">BioSQSSigner</string>
+    <string name="aboutVersion">Versión 1.0</string>
+    <string name="aboutManufacturer">SmartAccess S.L</string>
+    
+    <string name="title_connection_parameters">Parámetros de Conexión</string>
+    <string name="title_frontend_parameters">Parámetros de Conexión FrontEnd</string>
+    <string name="title_activity_import_cert">Añadir Certificado</string>
+    <string name="title_pdf_viewer">Documento PDF</string>
+    <string name="button_import_cert">Añadir Certificado</string>
+    <string name="noItemsSelected">Seleccione al menos un elemento de la lista</string>
+    <string name="certs_available">Certificados Instalados</string>
+    <string name="exit_title">Confirmación</string>
+    <string name="exit_msg">¿Esta seguro de que desea cerrar la applicación?</string>
+    <string name="delete_title">Confirmación</string>
+    <string name="delete_msg">¿Esta seguro de que desea borrar los documentos?</string>
+    <string name="delete_ok">Aceptar</string>
+    <string name="delete_cancel">Cancelar</string>
+    <string name="delete_error">Se ha producido un error borrando los archivos</string>
+    <string name="dialogbuttonadd">Añadir a Pendientes</string>
+    <string name="dialogbuttonsign">Firmar Documento</string>
+    <string name="dialogbuttonsignsend">Firmar y Enviar</string>
+    <string name="dialogbuttoncheck">Verificar Firmas</string>
+    <string name="open_doc_title">Abrir Documento</string>
+    <string name="send_doc_title">Enviar Documento</string>
+    <string name="certChooserMsg">Seleccione el contenedor de certificados</string>
+    <string name="certChooserErrChooserMsg">No se ha encontrado un selector de ficheros. Por favor, instale uno para seleccionar el certificado</string>
+    <string name="certChooserOkMsg">Certificado importado correctamente</string>
+    <string name="certChooserErrorMsg">Error al importar certificado</string>
+    <string name="no_cert_error">No hay certificados instalados</string>
+    <string name="access_cert_error">Error al acceder el contendor de certificados</string>
+    <string name="certificate_pass_title">"Contraseña del Certificado"</string>
+    <string name="certificate_pass_msg">"Escriba la contraseña"</string>
+    <string name="incorrect_pass">Contraseña Incorrecta</string>
+    <string name="authentication_error">Error al realizar la atenticación</string>
+    <string name="statisticsDialog_title">Confirmacion</string>
+    <string name="statisticsDialog_msg">¿Esta seguro de reiniciar las estadisiticas?</string>
+    <string name="storage_error">Error: Error en el sistema de almacenamiento</string>
+    <string name="file_error">Error: Fichero incorrecto</string>
+    <string name="general_error">Error: Reinicie la aplicación></string>
+    <string name="net_error">Error: No hay conexión a Internet</string>
+    <string name="msg_ok">Aceptar</string>
+    <string name="msg_cancel">Cancelar</string>
+    <string name="msg_error">Error</string>
+    <string name="progress_verify_title">BioSQSSigner</string>
+    <string name="progress_verify_msg">Verificando firmas&#8230;</string>
+    <string name="msg_verify_all_ok">Todas las firmas son válidas</string>
+    <string name="msg_verify_some_invalid">Al menos una firma es inválida</string>
+    <string name="msg_verify_incomplete">Alguna firma no ha podido verificarse</string>
+    <string name="msg_verify_error">No se ha podido verificar el documento</string>
+    <string name="msg_dialog_verify_title">Resultado:</string>
+    <string name="msg_dialog_verify_result_no_signature">El fichero no contiene ninguna firma</string>
+    
+    <string name="dialog_sig_result_label">Resultado</string>
+    <string name="dialog_sig_available_label">Firmas disponibles:</string>
+    <string name="dialog_sig_signer_label">Firmante</string>
+    <string name="dialog_sig_state_label">Estado</string>
+    <string name="dialog_sig_date_label">Fecha</string>
+    
+    <string name="dialog_select_action">Seleccione la acción</string>
+    
+    <string name="dialog_sig_detail_label">Detalles de la Firma</string>
+    <string name="dialog_sig_cert_label">Certificado de Firma</string>
+    <string name="dialog_sig_cert_button">Volver</string>
+    
+    <string name="error_invalid_uri">La URI del documento está vacia o no es válida</string>
+     <string name="error_viewing_pdf">Se ha producido un erro visualizando el documento</string>
+        
+    <string name="msg_dialog_status">Estado</string>
+    <string name="msg_dialog_id">ID</string>
+    <string name="msg_dialog_profile">Perfil</string>
+    <string name="msg_dialog_type">Tipo</string>
+    <string name="msg_dialog_hash">Alg. Hash</string>
+    <string name="msg_dialog_date">Fecha</string>
+    <string name="msg_dialog_issuer">Emisor</string>
+    <string name="msg_dialog_subject">Asunto</string>
+    <string name="msg_dialog_vfrom">Inicio Validez</string>
+    <string name="msg_dialog_vto">Fin Validez</string>
+    <string name="msg_send_mail">Enviar mail&#8230;</string>
+    <string name="progress_sign_title">BioSQSSigner</string>
+    <string name="progress_sign_msg">Firmando documento&#8230;</string>
+    <string name="progress_mail_title">BioSQSSigner</string>
+    <string name="progress_mail_msg">Enviando documento&#8230;</string>
+    <string name="progress_signmail_title">BioSQSSigner</string>
+    <string name="progress_signmail_msg">Realizando el proceso de firma&#8230;</string>    
+    <string name="custom_msg_signature_ok">Firma completada correctamente</string>
+    <string name="custom_msg_doc_sent">Se ha enviado el documento</string>
+    <string name="custom_msg_sig_ok_send">Proceso de firma realizado, se va a proceder con el envio</string>
+    <string name="custom_msg_sig_error">Fallo realizando la firma del documento</string>
+    <string name="custom_msg_send_error">Fallo enviando el documento</string>
+    <string name="custom_msg_sigsend_error">Error en la firma/envio del documento</string>    
+    <string name="mailFrom">xxxxx@gmail.com</string>
+    <string name="pass">xxxxx</string>
+    <string name="mailTo">xxxx@gmail.com</string>
+    <string name="mailSubject">Envio desde BioSQSSigner"</string>
+    <string name="mailBody">Nuevo documento recibido</string>
+    <string name="title_activity_verify">VerifyActivity</string>
+    <string name="about_text"><![CDATA[BioSQSSigner está basada en la solución SealSign Engine, de SmartAccess S.L. SealSign Engine es un servidor empresarial para la integración de la firma electrónica de documentos en aplicaciones de negocio y dispositivos móviles. Se trata de un motor de firma completo, flexible y versátil:<br>
+ <br>
+• Arquitectura basada en servicios web.<br>
+• Formatos de documento electrónico: PDF, XML, Office, Open Office, CMS, &#8230;<br>
+• Formatos de firma simples y avanzados: PKCS#7/CMS y CAdES, XMLDSig y XAdES, PDF Signature y PAdES.<br>
+• Permite la generación de firmas con sellado de tiempo.<br>
+• Incorpora una completa autoridad de validación de certificados.<br>
+• Permite la firma en movilidad desde smartphones y tabletas.<br>
+• Conectores para la integración con aplicaciones de negocio y gestores documentales.<br>
+• Permite la firma en servidor o en cliente.<br>
+<br>
+Para ampliar información, puede visitar nuestra página web:<br> 
+<a href="http://www.smartaccess.es">www.smartaccess.es</a><br> 
+<br> 
+El servicio gratuito de firma electrónica que utiliza esta aplicación inicialmente incorpora los prestadores de servicios de certificación de confianza en base a listas TSL según define el estandard ETSI TS 102 231 v.3.1.2. Puede consultar la relación de prestadores dados de alta en el servicio en el documento de condiciones del servicio. Si requiere dar de alta algún prestador que no este reflejado en la lista, por favor, contacte con el departamento de soporte a través de la aplicación. <br> 
+<br> 
+Condiciones del servicio:<br> 
+<a href="https://freews.sealsign.es/web/en/termsofservice.htm">https://freews.sealsign.es/web/en/termsofservice.htm</a><br><br>
+Este software se distribuye bajo licencia AGPL: <br>
+<a href="http://www.gnu.org/licenses/agpl.txt">http://www.gnu.org/licenses/agpl.txt</a><br><br>
+Contactar con soporte@smartaccess.es para obtener el codigo fuente de esta aplicacion</a>
+]]>
+</string>
+
+    <string name="progress_beginsignature_title">Subiendo fichero a SealSign</string>
+    <string name="progress_beginsignature_text">Por favor espere&#8230;</string>
+    <string name="progress_verifysignature_title">Verificando firma</string>
+    <string name="progress_verifysignature_text">Por favor espere&#8230;</string>
+    <string name="bsspanel_clear_text">Borrar</string>
+    <string name="bsspanel_save_text">Salvar</string>
+    <string name="progress_bsspanel_save_title">Salvando firma</string>
+    <string name="progress_bsspanel_save_text">Por favor espere&#8230;</string>
+    <string name="progress_endsignature_title">Guardando documento firmado</string>
+    <string name="progress_endsignature_text">Por favor espere&#8230;</string>
+    <string name="progress_beginsignaturecomponentmode_title">Conectando con SealSign</string>
+    <string name="progress_beginsignaturecomponentmode_text">Please wait&#8230;</string>
+    <string name="progress_endsignaturecomponentmode_title">Firmando documento</string>
+    <string name="progress_endsignaturecomponentmode_text">Please wait&#8230;</string>
+    
+    <string name="signature_result_title">Resultado de la verificación</string>
+    <string name="signature_result_text_match">Firmas coincidentes encotradas</string>
+    <string name="signature_result_text_nomatch">Firmas coincidentes no encontradas</string>
+    <string name="signature_result_text_nosignature">El documento no esta firmado</string>
+    <string name="signature_result_text_error">Error en la verificación</string>
+    <string name="signature_result_signature_available_title">Firmas disponibles</string>
+    <string name="signature_result_signature_available_status_title">Estado</string>
+    <string name="signature_result_signature_available_datetime_title">Fecha</string>
+    <string name="signature_result_signature_available_status_match">Coincidente</string>
+    <string name="signature_result_signature_available_status_nomatch">No coincidente</string>
+    <string name="signature_result_signature_detail_title">Detalles de la firma</string>
+    <string name="signature_result_signature_detail_score_title">Puntuación</string>
+    <string name="signature_result_signature_detail_profile_title">Perfil</string>
+    <string name="signature_result_signature_detail_type_title">Tipo</string>
+</resources>

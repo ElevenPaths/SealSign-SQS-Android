@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "#efefef"><!-- "@android:drawable/gallery_thumb"> -->
+
+    <!--  <TextView android:id="@+id/text"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/search"/>   -->
+     
+     <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+   <LinearLayout
+    android:focusable="true" android:focusableInTouchMode="true"
+    android:layout_width="0px" android:layout_height="0px"/>
+    
+     <EditText
+         android:id="@+id/inputSearch"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:drawableRight="@drawable/search"
+         android:hint="@string/search_title" >
+
+		</EditText>
+
+    <!-- The frame layout is here since we will be showing either
+    the empty view or the list view.  -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+        <!-- Here is the list. Since we are using a ListActivity, we
+             have to call it "@android:id/list" so ListActivity will
+             find it -->
+       <ListView android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawSelectorOnTop="false"
+            android:divider="#b5b5b5"
+       		android:dividerHeight="1dp"
+       		android:choiceMode="multipleChoice"
+       		android:listSelector="@drawable/list_selector" />
+
+
+        <!-- Here is the view to show if the list is emtpy -->
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </FrameLayout>
+
+</LinearLayout>

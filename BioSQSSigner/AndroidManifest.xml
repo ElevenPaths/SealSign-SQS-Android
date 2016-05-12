@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.smartaccess.mobilebiosqssigner"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="es.smartaccess.mobilebiosqssigner.MobileBioSQSSignerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+				 <!-- "application/pdf" />   <data android:mimeType="*/*"/> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="es.smartaccess.mobilebiosqssigner.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="es.smartaccess.mobilebiosqssigner.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="es.smartaccess.mobilebiosqssigner.ConnectionActivity"
+            android:label="@string/title_activity_connection" >
+        </activity>
+        <activity
+            android:name="es.smartaccess.mobilebiosqssigner.ImportCertActivity"
+            android:label="@string/title_activity_import_cert" >
+        </activity>
+        <activity
+            android:name="es.smartaccess.mobilebiosqssigner.PdfViewer"
+            android:label="@string/title_pdf_viewer"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name="es.smartaccess.mobilebiosqssigner.VerifyActivity"
+            android:label="@string/title_activity_verify" >
+        </activity>
+        <activity
+            android:name="es.smartaccess.mobilebiosqssigner.MobileBioSQSSignerFE"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="es.smartaccess.mobilebiosqssigner.SIGNFE" />
+                <category android:name="android.intent.category.DEFAULT" /> 
+        		<category android:name="android.intent.category.BROWSABLE" /> 
+            </intent-filter>
+        </activity>
+        <activity android:name="es.smartaccess.sealsignbss.SealSignBSSPanel" 
+            android:theme="@style/Theme.Transparent">
+        </activity>
+    </application>
+
+</manifest>

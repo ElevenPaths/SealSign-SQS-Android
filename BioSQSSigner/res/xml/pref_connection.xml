@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditTextPreference android:title="@string/URLSealSign" android:key="URLSealSign" android:defaultValue=""/>
+        <EditTextPreference android:title="@string/ServiceTimeout" android:key="ServiceTimeout" android:defaultValue="60"/>
+        <EditTextPreference android:title="@string/UserSealSign" android:key="UserSealSign" android:defaultValue=""/>
+        <EditTextPreference android:title="@string/PassSealSign" android:key="PassSealSign"  android:inputType="textPassword" android:defaultValue="" android:summary="******"/>
+    </PreferenceScreen>

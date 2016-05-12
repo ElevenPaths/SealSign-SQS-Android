@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        
+        <PreferenceScreen android:title="@string/CommentsSupport" android:key="CommentsSupport">        
+        </PreferenceScreen>
+        
+        <PreferenceScreen android:title="@string/Help" android:key="Help">  
+	        <intent
+	        android:action="android.intent.action.VIEW"
+	        android:data="http://www.smartaccesscorp.com/faqs/"
+	        />        
+        </PreferenceScreen>
+        
+    </PreferenceScreen>

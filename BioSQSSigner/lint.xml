@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale">
+        <ignore path="src/es/smartaccess/mobilebiosqssigner/MobileBioSQSSignerActivity.java" />
+    </issue>
+    <issue id="UseSparseArrays">
+        <ignore path="src/es/smartaccess/mobilebiosqssigner/JobCache.java" />
+    </issue>
+</lint>

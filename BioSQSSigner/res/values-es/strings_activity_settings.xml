@@ -1,0 +1,68 @@
+<resources>
+
+    <string name="title_activity_settings">Configuración</string>
+    <string name="pref_header_signature">Parámetros de Firma</string>
+    <string name="pref_header_statistics">Estadisticas</string>
+    <string name="pref_header_support">Soporte</string>
+      
+      <string-array name="ProfileList">
+        <item >PDF</item>
+        <item >PAdESBasic</item>
+        <item >PAdESBES</item>
+        <item >PAdESLTV</item>
+        <item >PAdESXML</item>
+        <item >Office</item>       
+    </string-array>
+     <string name="Profile_title">Perfil</string>
+     
+     <string-array name="LocationList">
+        <item >Esquina Superior Izquierda</item>
+        <item >Esquina Superior Derecha</item>
+        <item >Esquina Inferior Izquierda</item>
+        <item >Esquina Inferior Derecha</item>
+        <item >Margen Izquierdo</item>
+        <item >Margen Derecho</item>
+        <item >Personalizado</item>       
+    </string-array>
+     <string name="Location_title">Posición</string>
+     <string name="DefaultLocation_title">Esquina Superior Izquierda</string>
+     
+     <string-array name="SizeList">
+        <item >Automático</item>
+        <item >Personalizado</item>       
+    </string-array>
+     <string name="Size_title">Tamaño</string>
+     <string name="DefaultSize_title">Automático</string>
+     
+     <string-array name="RotationList">
+        <item >0º</item>
+        <item >90º</item>
+        <item >180º</item>
+        <item >270º</item>       
+    </string-array>
+     <string name="Rotation_title">Rotación</string>
+     
+     <string-array name="PagesList">
+        <item >Todas</item>
+        <item >Seleccionar</item>       
+    </string-array>
+     <string name="Pages_title">Páginas</string>
+     <string name="DefaultPages_title">Seleccionar</string>
+       
+    <string name="PDFfilesTitle">Ficheros PDF</string>
+    <string name="XPSfilesTitle">Ficheros XPS</string>
+
+    <string name="UseStatistics">Estadisticas de Uso</string>
+    <string name="TotalSignatures">Total Firmas</string>   
+    <string name="TotalVerifications">Total Verificaciones</string>
+    <string name="SuccessfulSignatures">Firmas correctas</string>
+    <string name="SuccessfulVerifications">Verificaciones Correcta </string>
+    <string name="SignatureErrors">Errores de firma</string>
+    <string name="VerificationErrors">Errores de Verificación</string>
+    <string name="ResetStatistics">REINICIAR ESTADISITICAS"</string>
+    
+    <string name="CommentsSupport">Comentarios/Soporte</string>
+    <string name="Help">Ayuda</string>
+
+    
+</resources>

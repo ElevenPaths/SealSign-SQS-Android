@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   	 <item android:id="@+id/changeuser" android:icon="@drawable/ic_menu_cc" android:title="@string/changeuser" android:showAsAction="ifRoom|withText"/><item android:id="@+id/refreshdocuments" android:icon="@drawable/ic_menu_refresh" android:title="@string/refreshdocuments" android:showAsAction="ifRoom|withText"/>
+     <item 
+         android:id="@+id/Ajustes"
+         android:icon="@drawable/ic_net_settings_w" 
+         android:title="@string/menu_op_adjust"/>
+     <item 
+         android:id="@+id/Ayuda" 
+         android:icon="@drawable/ic_about_w" 
+         android:title="@string/menu_op_help"/>
+
+     <item
+        android:id="@+id/muticheck"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_m_check"
+        android:title="@string/menu_multiseleccion"/>
+     
+      <item
+         android:id="@+id/options"
+         android:icon="@drawable/ic_options2"
+         android:title="@string/menu_options"
+         android:showAsAction="ifRoom|withText">
+        <menu>
+            <item
+                android:id="@+id/sign"
+                android:icon="@drawable/ic_cert"
+                android:title="@string/menu_sign"/>
+             <item
+                android:id="@+id/select_all"
+                android:icon="@drawable/ic_select_all"
+                android:title="@string/menu_select_all"/>
+             <item
+                android:id="@+id/delete"
+                android:icon="@drawable/ic_delete"
+                android:title="@string/menu_delete"/><item android:id="@+id/changeowner" android:icon="@drawable/ic_menu_cc" android:title="@string/changeowner" />
+        </menu>
+    </item>
+    
+    
+    
+    @android:@android:@android:@android:ic_menu_refreshic_menu_cc
+</menu>
