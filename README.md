@@ -13,3 +13,8 @@ A running instance of SQS, can be dowloaded from here (https://www.elevenpaths.c
  * Setup SQS connection string
  * Search documents in SQS
  * Change owner of documents
+
+# Screenshots
+
+![Signed documents](/images/signedDocuments.png "Signed documents")
+![Settings](/images/settings.png "Settings")
