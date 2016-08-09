@@ -4,7 +4,9 @@ Example use of the SealSign SDK Simple Queue Service (SQS) in Android.
 
 # Requisites
 
-A running instance of SQS, can be dowloaded from here (https://www.elevenpaths.com/technology/sealsign/sealsign-engine/index.html) the executable is located on the Tools folder
+A running instance of SQS, can be dowloaded from here (https://www.elevenpaths.com/technology/sealsign/sealsign-engine/index.html) the executable is located on the Tools folder.
+
+This example uses MuPDF as a sample viewer. MuPDF native libraries or other viewer must be included in the project in order to run the App. MuPDF source code can be obtained from http://mupdf.com/.
 
 # Funcionalities
 
