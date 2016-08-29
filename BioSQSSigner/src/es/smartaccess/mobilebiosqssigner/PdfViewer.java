@@ -1,6 +1,9 @@
 package es.smartaccess.mobilebiosqssigner;
 
+import java.io.BufferedOutputStream;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,9 +11,6 @@ import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
-import com.artifex.mupdfdemo.MuPDFCore;
-import com.artifex.mupdfdemo.MuPDFPageAdapter;
-import com.artifex.mupdfdemo.MuPDFReaderView;
 
 import es.smartaccess.SealSignSQSService.wcf.ArrayOfJobReference;
 import es.smartaccess.SealSignSQSService.wcf.Job;
@@ -35,16 +35,16 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
+import android.widget.Button;
 import android.widget.FrameLayout.LayoutParams;
 
 public class PdfViewer extends SherlockActivity 
 {
     public static Context context = null;
 	
-	MuPDFReaderView mPDFView = null;
-	MuPDFCore pdfCore = null;
 	
 	int selectJobId = -1;
 	
@@ -57,13 +57,34 @@ public class PdfViewer extends SherlockActivity
 		setContentView(R.layout.pdf_viewer_layout);
 		
 		RelativeLayout.LayoutParams relativeParams = new RelativeLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT);
-    
-		mPDFView = new MuPDFReaderView(this);
-		mPDFView.setBackgroundColor(Color.WHITE);
-		mPDFView.setLayoutParams(relativeParams);
 		
 		RelativeLayout pdfViewContainer = (RelativeLayout)findViewById(R.id.pdfviewcontainer);
-		pdfViewContainer.addView(mPDFView);
+		 final Button button = (Button) findViewById(R.id.btnOpenPDF);
+         button.setOnClickListener(new View.OnClickListener() {
+             public void onClick(View v) {
+                 // Perform action on click
+            	 Job job = AppHandler.getInstance().getM_JobToShow();
+ 	        	//Copy the private file's data to the EXTERNAL PUBLIC location
+ 	        	File outputDir = context.getExternalCacheDir(); // context being the Activity pointer
+ 			File outputFile;
+ 			try {
+ 				outputFile = File.createTempFile("sqstemppdf", null, outputDir);
+ 				BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(outputFile));
+ 	        	bos.write(job.jobReferenceEx.blob);
+ 	        	bos.flush();
+ 	        	bos.close();
+ 	        	Uri pdfPath = Uri.fromFile(outputFile);
+ 	        	long leng = outputDir.length();
+ 	            Intent intent = new Intent(Intent.ACTION_VIEW);
+ 	            intent.setDataAndType(pdfPath, "application/pdf");
+ 	           intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+ 	            startActivity(intent);
+ 			} catch (IOException e) {
+ 				// TODO Auto-generated catch block
+ 				e.printStackTrace();
+ 			}
+             }
+         });
 		
 		Job job = AppHandler.getInstance().getM_JobToShow();
 		selectJobId =  job.jobReferenceEx.id;
@@ -72,16 +93,14 @@ public class PdfViewer extends SherlockActivity
 		
 		InitializeView(job);
 	}
-	
+		
 	private void InitializeView(Job job)
 	{
 		setTitle(job.jobReferenceEx.jobTitle);
 		
 		try 
 		{
-			pdfCore = new MuPDFCore(job.jobReferenceEx.blob);
-			pdfCore.countPages();
-			mPDFView.setAdapter(new MuPDFPageAdapter(this, pdfCore));
+			
 		}
         catch (Exception ex) 
         {

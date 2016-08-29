@@ -22,9 +22,6 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
-import com.artifex.mupdfdemo.MuPDFCore;
-import com.artifex.mupdfdemo.MuPDFPageAdapter;
-import com.artifex.mupdfdemo.MuPDFReaderView;
 
 import es.smartaccess.SealSignSQSService.wcf.ArrayOfJobReference;
 import es.smartaccess.SealSignSQSService.wcf.BiometricSignatureContext;
